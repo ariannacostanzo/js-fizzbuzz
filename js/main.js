@@ -42,7 +42,6 @@ for (let i = 1; i <= 100; i++) {
  
 }
 
-square += '</div>'
 row.innerHTML = square
 
 
@@ -51,7 +50,8 @@ row.innerHTML = square
 
 // METODO manipolazione del DOM
 
-// ciclo for
+// const row = document.querySelector('.row');
+// // ciclo for
 
 // for (let i = 1; i <= 100; i++) {
 //     const square = document.createElement('div');
