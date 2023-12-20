@@ -24,29 +24,29 @@ console.log('JS OK');
 // METODO template literals
 
 // const row = document.querySelector('.row');
-// let square = ''
+// let circle = ''
 
 
 // // ciclo for
 // for (let i = 1; i <= 100; i++) {
 //     if (i % 3 === 0 && i % 5 === 0) {
-//        square += "<div class='square bg-fizz-buzz'>FizzBuzz</div>"
+//        circle += "<div class='circle bg-fizz-buzz'>FizzBuzz</div>"
 //     } else if (i % 3 === 0) {
-//         square += "<div class='square bg-fizz'>Fizz</div>"
+//         circle += "<div class='circle bg-fizz'>Fizz</div>"
 //     } else if (i % 5 === 0) {
-//         square += "<div class='square bg-buzz'>Buzz</div>"
+//         circle += "<div class='circle bg-buzz'>Buzz</div>"
 //     }  else {
-//         square += `<div class='square'>${i}</div>` 
+//         circle += `<div class='circle'>${i}</div>` 
         
 //     }
  
 // }
 
-// row.innerHTML = square
+// row.innerHTML = circle
 
 
 
-// row.innerHTML = square
+// row.innerHTML = circle
 
 // METODO manipolazione del DOM
 
@@ -54,26 +54,26 @@ const row = document.querySelector('.row');
 // ciclo for
 
 for (let i = 1; i <= 100; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
+    const circle = document.createElement('div');
+    circle.classList.add('circle');
     const text = document.createElement('p')
     
 
     if (i % 3 === 0 && i % 5 === 0) {
        text.append('FizzBuzz') 
-       square.classList.add('bg-fizz-buzz')
+       circle.classList.add('bg-fizz-buzz')
     } else if (i % 3 === 0) {
         text.append('Fizz') 
-        square.classList.add('bg-fizz')
+        circle.classList.add('bg-fizz')
     } else if (i % 5 === 0) {
         text.append('Buzz') 
-        square.classList.add('bg-buzz')
+        circle.classList.add('bg-buzz')
     }  else {
         text.append(i)
     }
 
-    square.appendChild(text)
-    row.appendChild(square);
+    circle.appendChild(text)
+    row.appendChild(circle);
     
 }
 

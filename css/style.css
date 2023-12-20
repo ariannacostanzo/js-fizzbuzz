@@ -29,7 +29,7 @@ h1 {
     padding: 2rem;
 }
 
-.square {
+.circle {
     height: 130px;
     flex-basis: 130px;
     background-color: var(--default);
@@ -38,18 +38,55 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
 }
 
 .bg-fizz {
     background-color: var(--fizz);
+    animation: fizz .5s infinite alternate;
+}
+
+@keyframes fizz {
+    0% {
+        translate: -5px;
+    }
+
+    50% {
+        translate: +5px;
+    }
+
+    
 }
 
 .bg-buzz {
     background-color: var(--buzz);
+    animation: buzz 1s infinite ;
 }
+
+@keyframes buzz {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+}
+
+
 
 .bg-fizz-buzz {
     background-color: var(--fizz-buzz);
+    animation: fizzbuzz 2s infinite ;
+}
+
+@keyframes fizzbuzz {
+    100% {
+        rotate: 360deg;
+    }
+    
 }
 
 .border {
