@@ -24,25 +24,26 @@ console.log('JS OK');
 // METODO template literals
 
 const row = document.querySelector('.row');
-
+let square = ''
 
 
 // ciclo for
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 3 === 0 && i % 5 === 0) {
-//         let square = '<div class="square>FizzBuzz</div>'
-//         console.log("FizzBuzz")
-//     } else if (i % 3 === 0) {
-//         square = '<div class="square>Fizz</div>'
-//         console.log("Fizz")
-//     } else if (i % 5 === 0) {
-//         square = '<div class="square>Buzz</div>'
-//         console.log("Buzz")
-//     }  else {
-//         square = `<div class="square">${i}</div>`;
-//     }
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+       square += "<div class='square bg-fizz-buzz'>FizzBuzz</div>"
+    } else if (i % 3 === 0) {
+        square += "<div class='square bg-fizz'>Fizz</div>"
+    } else if (i % 5 === 0) {
+        square += "<div class='square bg-buzz'>Buzz</div>"
+    }  else {
+        square += `<div class='square'>${i}</div>` 
+        
+    }
  
-// }
+}
+
+square += '</div>'
+row.innerHTML = square
 
 
 
@@ -52,26 +53,26 @@ const row = document.querySelector('.row');
 
 // ciclo for
 
-for (let i = 1; i <= 100; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
-    const text = document.createElement('p')
+// for (let i = 1; i <= 100; i++) {
+//     const square = document.createElement('div');
+//     square.classList.add('square');
+//     const text = document.createElement('p')
     
 
-    if (i % 3 === 0 && i % 5 === 0) {
-       text.append('FizzBuzz') 
-       square.classList.add('bg-fizz-buzz')
-    } else if (i % 3 === 0) {
-        text.append('Fizz') 
-        square.classList.add('bg-fizz')
-    } else if (i % 5 === 0) {
-        text.append('Buzz') 
-        square.classList.add('bg-buzz')
-    }  else {
-        text.append(i)
-    }
+//     if (i % 3 === 0 && i % 5 === 0) {
+//        text.append('FizzBuzz') 
+//        square.classList.add('bg-fizz-buzz')
+//     } else if (i % 3 === 0) {
+//         text.append('Fizz') 
+//         square.classList.add('bg-fizz')
+//     } else if (i % 5 === 0) {
+//         text.append('Buzz') 
+//         square.classList.add('bg-buzz')
+//     }  else {
+//         text.append(i)
+//     }
 
-    square.appendChild(text)
-    row.appendChild(square);
+//     square.appendChild(text)
+//     row.appendChild(square);
  
-}
+// }
