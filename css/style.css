@@ -52,13 +52,14 @@ h1 {
     background-color: var(--fizz-buzz);
 }
 
-
+.border {
+    border: 2px solid black;
+}
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
     gap: 20px;
 }
 
